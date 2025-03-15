@@ -1,0 +1,228 @@
+body{
+  background-color: rgb(196, 255, 217);
+  align-items: center;
+  text-align: center;
+}
+
+.linkBanner{
+  background-color:darkgray;
+  width: 100%;
+  height: min-content;
+  bottom:0;
+  position: fixed;
+}
+
+.linkDiv{
+  position: fixed;
+  border:1px solid black;
+  left: 0;
+  bottom: -92%;
+  width: 100%;
+  height: 90%;
+  background: rgb(196, 255, 217);
+  color:rgb(20, 23, 17);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  z-index: 999;
+  padding-top: 0;
+}
+
+#linkBtn{
+  visibility: hidden;
+}
+
+@keyframes flyUp {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-92%);
+  }
+}
+
+@keyframes flyDown {
+  from {
+    transform: translateY(-92%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.linkDiv.active{
+  animation: flyUp .5s forwards;
+}
+
+.linkDiv.hidden{
+  animation: flyDown .5s forwards;
+}
+
+.directoryButton{
+  cursor: pointer;
+  position: static;
+  right:0;
+  width:auto;
+  height: 10%;
+}
+
+.directoryImg{
+  position: static;
+  top:8px;
+  right:2%;
+  height: 7.5vh;
+  width: auto;
+}
+.header{
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Push title to center and button to right */
+  padding: 10px 20px; /* Add some spacing */
+}
+@font-face {
+  font-family: fabric;
+  src: url("./assets/fonts/TA-FabricansExpanded-ExtraLight.otf");
+}
+
+@font-face{
+  font-family: title;
+  src: url("./assets/fonts/LibreBaskerville-Bold.ttf");
+}
+
+.title{
+  flex-grow: 1;
+  margin-top:2%;
+  font-family: title;
+  font-size: 3.5vw;
+  text-align:center;
+  padding-left:4%;
+  padding-right:0;
+}
+.linkButton{
+  font-family: fabric;
+  background-color:rgb(196, 255, 217);
+  border-width:2px;
+  margin-top: 3%;
+  border-radius: 7%/15%;
+  border-style: solid;
+  border-color: rgb(20, 23, 17);
+  color:rgb(20, 23, 17);
+  transition-duration:0.2s;
+  font-size:2.5vw;
+  height: 10%;
+  width:80%;
+  padding-top:1%;
+  padding-bottom:1%;
+}
+.linkButton:hover{
+  background-color:rgb(161, 222, 255);
+}
+
+.App {
+  text-align: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.projectContainer{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  margin-bottom:0;
+}
+
+#projPhoto{
+  width: 50%;
+  height: auto;
+}
+
+.projectBtn{
+  font-family:title;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  vertical-align: auto;
+  border-width: 0;
+  padding-top:7vw;
+  padding-bottom:7vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  background-color: rgb(161, 222, 255);
+}
+
+.projectBtn:hover{
+  background-color: rgb(117, 193, 234);
+}
+
+.descriptionBox{
+  position:absolute;
+  left:25%;
+  align-items:center;
+  background-color:rgb(161, 222, 255);
+  width:50%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0;
+  font-family:fabric;
+  margin-bottom:8vw;
+}
+
+#description{
+  margin-bottom:.5vw;
+}
+
+#moreInfo{
+  font-family:fabric;
+  font-weight:bolder;
+  background-color:rgb(161, 222, 255);
+  border-color: rgb(117, 193, 234);
+  border-style: solid;
+  padding:1vw;
+  padding-left:2vw;
+  padding-right:2vw;
+  border-radius:40%;
+  margin-bottom:2vw;
+}
+
+#moreInfo:hover{
+  background-color: rgb(117, 193, 234);
+}
