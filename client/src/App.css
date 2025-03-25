@@ -288,6 +288,13 @@ body{
 }
 
 .itemList{
-  text-align:center;
-  padding-left:40%;
+  text-align:justify;
+  padding-left:48%;
+}
+
+.skillsContent{
+  font-family:fabric;
+  font-weight: bolder;
+  font-size:120%;
+  line-height: 150%;
 }

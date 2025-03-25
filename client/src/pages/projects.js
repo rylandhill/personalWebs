@@ -10,6 +10,7 @@ import insightUpImg from "../assets/images/insightup.png";
 import snakeImg from "../assets/images/snake.png";
 import raspberryPiImg from "../assets/images/rpi.png";
 import xImg from "../assets/images/x.png";
+import signSenseImg from "../assets/images/signSense.png";
 
 
 function Projects() {
@@ -34,12 +35,14 @@ function Projects() {
       setIsCovered(true);
       document.body.style.overflow = "hidden";
       if(which==1){
-        document.getElementById("description").innerHTML = "<h1>Connect 4</h1><br></br><h3>Connect 4 made in Java using Swing for the interface.</h3>";
+        document.getElementById("description").innerHTML = "<h1>Sign-Sense</h1><br></br><h3>First year group project using a raspberry pi zero wh and a flask server to send a live video feed to another computer. The video feed was then analyzed by our own neural network, reading sign language letters, which could then be sent back to the pi through the flask server, and played through headphones with TTS.</h3>"
       }else if(which==2){
-        document.getElementById("description").innerHTML = '<h1>InsightUp</h1><br></br><h3>A website (pure HTML/CSS/JS) I was commissioned to make allowing you to input your blood test results and recieve information about what the rsults mean, and external sources which will allow you to learn more about your personal issues/possible treatment. The website can be found at this <a href="https://insightup.neocities.org/" target="_blank">link</a>.</h3>';
+        document.getElementById("description").innerHTML = "<h1>Connect 4</h1><br></br><h3>Connect 4 made in Java using Swing and JFrame for the interface.</h3>";
       }else if(which==3){
-        document.getElementById("description").innerHTML = '<h1>snake</h1><br></br><h3>The game snake built in HTML/CSS/JS available at this <a href="/snake.html" target="_blank">link</a>.</h3>';
+        document.getElementById("description").innerHTML = '<h1>InsightUp</h1><br></br><h3>A website (pure HTML/CSS/JS) I was commissioned to make allowing you to input your blood test results and recieve information about what the rsults mean, and external sources which will allow you to learn more about your personal issues/possible treatment. The website can be found at this <a href="https://insightup.neocities.org/" target="_blank">link</a>.</h3>';
       }else if(which==4){
+        document.getElementById("description").innerHTML = '<h1>snake</h1><br></br><h3>The game snake built in HTML/CSS/JS available at this <a href="/snake.html" target="_blank">link</a>.</h3>';
+      }else if(which==5){
         document.getElementById("description").innerHTML = "<h1>Raspberry Pi</h1><br></br><h3>A Raspberry Pi Zero WH configured to update it's epaper display output every 24 hours.";
       }
     }
@@ -65,41 +68,51 @@ function Projects() {
         <div></div>
         <div>
           <div className="projectPanel" id="proj1">
-            <img className="projectImage" src={connect4Img} alt="connect4 image"></img>
+            <img className="projectImage" src={signSenseImg} alt="signSense"></img>
             <div className="overlay">
               <div className="description">
-              <h1>CONNECT 4</h1>
-              <button className="learn" id="connect4Btn" onClick={()=>learnMore(1)}>Learn More</button>
+              <h1>SIGN-SENSE</h1>
+              <button className="learn" id="signSenseBtn" onClick={()=>learnMore(1)}>Learn More</button>
               </div>
             </div>
           </div>
           <br></br>
           <div className="projectPanel" id="proj2">
-          <img className="projectImage" src={insightUpImg} alt="insightup image"></img>
-          <div className="overlay">
+            <img className="projectImage" src={connect4Img} alt="connect4 image"></img>
+            <div className="overlay">
               <div className="description">
-              <h1>INSIGHTUP</h1>
-              <button className="learn" id="insightBtn" onClick={()=>learnMore(2)}>Learn More</button>
+              <h1>CONNECT 4</h1>
+              <button className="learn" id="connect4Btn" onClick={()=>learnMore(2)}>Learn More</button>
               </div>
             </div>
           </div>
           <br></br>
           <div className="projectPanel" id="proj3">
-          <img className="projectImage" src={snakeImg} alt="snake image"></img>
+          <img className="projectImage" src={insightUpImg} alt="insightup image"></img>
           <div className="overlay">
               <div className="description">
-              <h1>SNAKE</h1>
-              <button className="learn" id="snakeBtn" onClick={()=>learnMore(3)}>Learn More</button>
+              <h1>INSIGHTUP</h1>
+              <button className="learn" id="insightBtn" onClick={()=>learnMore(3)}>Learn More</button>
               </div>
             </div>
           </div>
           <br></br>
           <div className="projectPanel" id="proj4">
+          <img className="projectImage" src={snakeImg} alt="snake image"></img>
+          <div className="overlay">
+              <div className="description">
+              <h1>SNAKE</h1>
+              <button className="learn" id="snakeBtn" onClick={()=>learnMore(4)}>Learn More</button>
+              </div>
+            </div>
+          </div>
+          <br></br>
+          <div className="projectPanel" id="proj5">
           <img className="projectImage" src={raspberryPiImg} alt="raspberry pi image"></img>
           <div className="overlay">
               <div className="description">
                 <h1>RASPBERRY PI</h1>
-                <button className="learn" id="rpiBtn" onClick={()=>learnMore(4)}>Learn More</button>
+                <button className="learn" id="rpiBtn" onClick={()=>learnMore(5)}>Learn More</button>
                 </div>
             </div>
           </div>

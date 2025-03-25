@@ -37,20 +37,19 @@ function Skills() {
         <div className="head">
           <h1>Languages</h1>
           <hr className="line"></hr>
-          <ul className="itemList">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C++</li>
-          </ul>
+          <h4 className="skillsContent">HTML<br></br>CSS<br></br>JavaScript<br></br>Python<br></br>Java<br></br>C<br></br>C++<br></br>SQL<br></br>VHDL</h4>
           <hr className="line"></hr>
         </div>
         <div className="head">
-          <h1>Frameworks/Libraries</h1>
+          <h1>Frameworks & Libraries</h1>
         <hr className="line"></hr>
+        <h4 className="skillsContent">React<br></br>Node.Js<br></br>Express<br></br>Selenium<br></br>PyGame<br></br>Tensorflow<br></br>Mediapipe<br></br>OpenCV2<br></br>Flask<br></br>JSwing<br></br>JFrame</h4>
+        <hr className="line"></hr>
+        </div>
+        <div className="head">
+        <h1>Tools</h1>
+        <hr className="line"></hr>
+        <h4 className="skillsContent">Git<br></br>AWS<br></br>Unix command line<br></br>Raspberry Pi<br></br>Wireshark<br></br>VS Code</h4>
         </div>
       </div>
     );
