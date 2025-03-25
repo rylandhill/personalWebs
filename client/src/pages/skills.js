@@ -34,6 +34,24 @@ function Skills() {
           <button className="linkButton" onClick={()=>navigate("/skills")}>Skills</button>
           <button className="linkButton" onClick={()=>navigate("/music")}>Music</button>
         </div>
+        <div className="head">
+          <h1>Languages</h1>
+          <hr className="line"></hr>
+          <ul className="itemList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+          </ul>
+          <hr className="line"></hr>
+        </div>
+        <div className="head">
+          <h1>Frameworks/Libraries</h1>
+        <hr className="line"></hr>
+        </div>
       </div>
     );
 }
