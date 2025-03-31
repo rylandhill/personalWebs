@@ -298,3 +298,60 @@ body{
   font-size:120%;
   line-height: 150%;
 }
+
+.itemIcon{
+  margin-right:auto;
+  margin-left:auto;
+  height:4.2vw;
+  position: relative;
+  align-items:center;
+}
+
+.iconImg{
+  position: relative;
+  max-height:100%;
+  max-width:100%;
+  padding: 1vw;
+  transition: background-color .3s ease-in-out, border-radius .3s ease-in-out, border-width .3s ease-in-out, border-color .3s ease-in-out, max-height .3s ease-in-out, max-width .3s ease-in-out;
+}
+
+.itemIcon:hover .iconImg{
+  background-color: rgb(166, 225, 187);
+  border-radius: 15%;
+  max-height:110%;
+  max-width:110%;
+}
+
+.skillTitle{
+  position: absolute;
+  font-family: fabric;
+  text-align: center;
+  visibility: hidden;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,200%);
+  padding:.1vw;
+  padding-top:.2vw;
+  transition: background-color .3s ease-in-out, border-radius .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.itemIcon:hover .skillTitle{
+  visibility: visible;
+  background-color: rgb(136, 195, 157,.5);
+  border-radius: 15%;
+}
+
+.iconList{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+#rpiTitle{
+  font-size: 90%;
+  transform: translate(-50%,220%);
+}
