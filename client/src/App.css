@@ -355,3 +355,101 @@ body{
   font-size: 90%;
   transform: translate(-50%,220%);
 }
+
+.subHeader{
+  display:inline;
+}
+
+#musicSortTitle{
+  display:inline;
+}
+
+#sortDropDown{
+  display:inline;
+  border-radius: 10%;
+  border-width: 0;
+  background-color: rgb(166, 225, 187);
+  font-family: fabric;
+  font-weight: bold;
+  padding: .3vw;
+}
+
+#sortDropDown:hover{
+  background-color: rgb(146, 205, 167);
+}
+
+#Breakdown{
+  width:80%;
+  background-color:white;
+  height:2vw;
+  margin-top:2%;
+  margin-right:auto;
+  margin-left:auto;
+  display:flex;
+  flex-direction:row;
+  border-top: 1px solid black;
+}
+
+.songContent{
+  display:inline-block;
+  transform: translateY(50%);
+}
+.artistName{
+  width: 20%;
+}
+.songName{
+  width: 40%;
+}
+.albumTitle{
+  width:30%;
+}
+
+.albumCover{
+  display:inline-block;
+  width:6%;
+}
+
+#coverLabel{
+  transform: translateY(25%);
+}
+
+.divider{
+  display:inline-block;
+  border-left:1px solid black;
+  height:auto;
+}
+
+#songListContainer{
+  width:80%;
+  background-color:white;
+  height:auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid black;
+  font-size:80%;
+}
+
+.likeButton{
+  display:inline-block;
+  width:4%;
+  margin-left:2%;
+  margin-right:2%;
+  transform: translateY(25%);
+}
+
+.albumImg{
+  display:inline-block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.likeButtonImg{
+  display:inline-block;
+  width:2vw;
+  height:2vw;
+}
+
+.songElement{
+  display:flex;
+  flex-direction:row;
+}
